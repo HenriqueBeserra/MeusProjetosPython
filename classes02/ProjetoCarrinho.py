@@ -39,7 +39,6 @@ while stop != "N":
             system('cls')
             continue
             
-############################            
 
     
      
@@ -48,6 +47,7 @@ while stop != "N":
     
     carrinho.SetItens(test)    
     
+############################            
     
     stop = str(input('Dejesa continuar [S][N]?\n')).upper()
     print('Adicionando...')
@@ -62,6 +62,10 @@ while stop != "N":
         print('Informação inválida!')
         stop = str(input('Dejesa continuar [S][N]?\n')).upper()
 
+
+
+
+################################
 system('cls')
 carrinho.ShowCar()
 print(f'Valor total : \033[1;32m{carrinho.ItemSoma()}$\033[0;0m')
