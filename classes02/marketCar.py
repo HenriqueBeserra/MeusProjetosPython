@@ -19,11 +19,13 @@ class CarrinhoDeCompras:
             print(str(item.nome).capitalize(), f"\033[1;36m{item.valor}\033[0;0m" )
         print('='*20)   
            
+    
     def ItemSoma(self):
         total = 0
         for itens in self.__item:
             total += itens.valor
         return total
+
 
 
 
