@@ -17,20 +17,37 @@ class Card:
         
         self.__num = str(num)
         
-    
+    #Função que vai retornar se os digitos são válidos ou não
     def Calculo(self):
         #Implementando o algorítimo de Luhn
         __dado1 = list()
         __dado2 = list()
+        __dado3 = list()
+        
         for x in self.__num[-2::-2]:
-            #__dado1.append(int(x))
-            print(x)
-        for y in self.__num[-1::-2]:
-            print(y)   
-
+            __dado1.append(int(x)*2)
 
         
+        for y in self.__num[-1::-2]:
+            __dado2.append(int(y))   
+        
+        for j in __dado1:
+            if j >= 10:
+                m1 = j//10
+                m2 = j%10
+                __dado3.append(m1)
+                __dado3.append(m2)            
+            else:
+                __dado3.append(j)
+            
+        n1 = sum(__dado3)    
+        n2 = sum(__dado2)
+        soma =(n1 + n2)
+        if (soma % 10) == 0:
+            print("\033[1;92mVálido\033[0;0m")
 
+
+    
     #Função que identifica o banco.
     def Banco(self):
 
@@ -75,7 +92,7 @@ class Verify:
         carro.Banco()
         carro.Show()
         carro.Calculo()
-
+        
 
 """"
 Base de informações: 
