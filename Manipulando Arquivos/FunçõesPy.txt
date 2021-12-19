@@ -1,0 +1,35 @@
+if --name-- = --main--
+	aplicação
+
+Usamos esta formatação para ter controle sobre o que queremos que aconteça.
+o codigo dentro desse if so acontecerá quando no terminal for chamado o main
+
+........................................................................................
+
+Função lambda, uma função que é anonima e conseguimos reescrever uma função muito
+grande em outa menor
+
+contadorLetras = lambda lista: [len(i) for x in lista]
+
+contadorLetras(['gato', 'cachorro'])
+
+
+output
+[4, 8]
+
+===========================================
+podemos ultiliazar um dicionario:
+
+calculadora = {
+
+	"Soma" : lambda a, b: a+b,
+	"subtração" : lambda a, b: a - b,
+}
+
+
+soma = calculadora[soma]
+print(f'A soma é {soma(10, 20)}')
+
+output
+
+A soma é 30

@@ -1,0 +1,31 @@
+Manipulando arquivos 
+
+criando um aruivo com um build int do python
+
+open('teste.txt', w)
+
+output
+Arquivo criado na mesma pasta.
+
+========++================++==============
+Escrevendo em um arquivo
+
+arquivo = open('Teste.txt', 'w')
+arquivo.write('Minha primeira informação')
+arquivo.close()
+
+para atualizar um arquivo mudamos o open("nome do arquivo","w")
+por: open("nome do arquivo","a")
+
+===========================================
+Para ler um arquivo
+
+usamos o r, e a função read
+
+arquivo = open('nome do arquivo', 'r')
+texto = arquivo.read()
+
+
+===========================================
+para adicionar um endereço
+aqruivo = open("endereço+nomedoarquivo")
