@@ -43,7 +43,9 @@ class Card:
         n1 = sum(__dado3)    
         n2 = sum(__dado2)
         soma =(n1 + n2)
+        
         if (soma % 10) == 0:
+            print('=' * 50)
             print("\033[1;92mVálido\033[0;0m")
 
 
@@ -69,18 +71,20 @@ class Card:
         
         
     def Show(self):
-        system('cls')
+        system('clear')
         print(self.__banco)    
             
 
 
 
 
-#Receber dados do usuário
+#Receber dados do usuário, interface.
 class Verify:
     
     def __init__(self ):  #A ideia aqui é relacionar as classes para que não haja tratamento de dados no client/interface
-        self.__cardNumber = str(input("Digite os digitos do cartão(Sem espaços): "))
+        print("\033[36mSeja bem vindo ao validador de cartões.")
+        print('='*35)
+        self.__cardNumber = str(input("\033[30mDigite os Números do cartão(Sem espaços): "))
         
                            
 

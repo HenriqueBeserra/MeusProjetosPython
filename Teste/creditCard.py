@@ -2,7 +2,7 @@
 from mainCredit import Verify, Card
 from os import system 
 
-system('cls')
+system('clear')
 
 
 
